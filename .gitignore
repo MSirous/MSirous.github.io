@@ -1,0 +1,12 @@
+/.quarto/
+/_site/
+**/*.quarto_ipynb
+
+# Standalone render artifacts created during local notebook checks.
+/site_libs/
+/*_files/
+/*.html
+/**/*.html
+/**/*_files/
+/**/index-listing.json
+!/scripts/trust-lab.html

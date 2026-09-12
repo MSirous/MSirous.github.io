@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Mahsa Sirous"
+  site-url: "https://msirous.github.io/"
+  description: "Research notes, reproducible experiments, and interactive work on reinforcement learning and trustworthy multi-agent systems."
+  favicon: assets/favicon.svg
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Workbench
+      - href: projects/index.qmd
+        text: Projects
+      - href: lab/index.qmd
+        text: Lab Notes
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        aria-label: GitHub
+        href: "https://github.com/MSirous"
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: "https://www.linkedin.com/in/mahsasirous/"
+  page-footer:
+    left: "© 2026 Mahsa Sirous"
+    right: "Built as a reproducible research notebook."
+  repo-url: "https://github.com/MSirous/MSirous.github.io"
+
+format:
+  html:
+    theme: [darkly, styles.scss]
+    toc: true
+    toc-location: right
+    code-fold: true
+    code-tools: false
+    code-copy: true
+    smooth-scroll: true
+    anchor-sections: true
+    include-in-header:
+      text: |
+        <meta name="theme-color" content="#07111f">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Mahsa Sirous — Research Workbench">
+        <meta property="og:description" content="Reproducible experiments and interactive work on reinforcement learning and trustworthy multi-agent systems.">
+
+execute:
+  freeze: auto
+  warning: false
+  error: false
+
+bibliography: references.bib

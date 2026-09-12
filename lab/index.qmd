@@ -1,0 +1,15 @@
+---
+title: "Lab Notes"
+description: "Derivations, paper notes, implementations, and experiment logs."
+page-layout: full
+toc: false
+listing:
+  contents:
+    - reinforcement-learning-from-scratch.ipynb
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  filter-ui: true
+---
+
+This is the working layer of the site: mathematical derivations, implementations, experimental results, and notes about what did not work.

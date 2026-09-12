@@ -1,0 +1,135 @@
+---
+title: "Mahsa Sirous"
+pagetitle: "Mahsa Sirous — AI Research Workbench"
+description: "A living research workbench for reinforcement learning, trustworthy multi-agent systems, and machine learning from first principles."
+page-layout: full
+toc: false
+title-block-banner: false
+format:
+  html:
+    code-fold: true
+    code-tools: false
+    css: home.css
+include-after-body:
+  - scripts/trust-lab.html
+---
+
+::: {.workbench-shell}
+::: {.hero-grid}
+::: {.hero-copy}
+<p class="eyebrow">AI RESEARCH WORKBENCH · SINGAPORE</p>
+
+# I rebuild intelligent systems to understand how—and whom—they learn to trust.
+
+I’m **Mahsa Sirous**, a software engineer and early-career AI researcher working at the intersection of reinforcement learning, multi-agent systems, and trustworthy AI.
+
+This is a living record of the questions I study, the systems I build, and the experiments that survive contact with reality.
+
+::: {.hero-actions}
+[Explore the research](projects/trust-aware/index.qmd){.btn .btn-primary}
+[Open the lab notebook](lab/reinforcement-learning-from-scratch.ipynb){.btn .btn-outline-light}
+:::
+:::
+
+::: {.signal-card}
+<div class="signal-card__header"><span>ACTIVE QUESTION</span><span class="status-chip">EXPERIMENTING</span></div>
+
+## Can a system learn which AI agents to trust?
+
+Majority voting treats every agent as equally credible. My current work models trust as a learned value so a system can reduce the influence of agents that are confidently wrong.
+
+::: {.metric-row}
+::: {.metric}
+<span class="metric__value">90.7%</span>
+<span class="metric__label">EMA accuracy</span>
+:::
+::: {.metric}
+<span class="metric__value">91.0%</span>
+<span class="metric__label">Gradient bandit</span>
+:::
+::: {.metric}
+<span class="metric__value">0.12</span>
+<span class="metric__label">Adversarial trust</span>
+:::
+:::
+:::
+:::
+
+::: {.section-heading}
+<div>
+<p class="eyebrow">SIGNATURE EXPERIMENT</p>
+
+## Trust Observatory
+</div>
+<p>Change the agents’ reliability and watch an online trust estimator adapt. This compact simulation uses an exponential moving average with full-feedback evaluation.</p>
+:::
+
+```{=html}
+<div id="trust-lab" class="trust-lab" aria-label="Interactive trust learning simulation">
+  <div class="trust-controls">
+    <label>Reliable agent <output id="reliable-value">88%</output><input id="reliable" type="range" min="50" max="99" value="88"></label>
+    <label>Noisy agent <output id="noisy-value">63%</output><input id="noisy" type="range" min="20" max="90" value="63"></label>
+    <label>Adversarial agent <output id="adversarial-value">11%</output><input id="adversarial" type="range" min="1" max="60" value="11"></label>
+    <label>Rounds <output id="rounds-value">120</output><input id="rounds" type="range" min="40" max="300" step="10" value="120"></label>
+    <button id="run-trust" class="btn btn-primary" type="button">Run experiment</button>
+  </div>
+  <div class="trust-visual">
+    <div class="legend" aria-hidden="true"><span class="legend-reliable">Reliable</span><span class="legend-noisy">Noisy</span><span class="legend-adversarial">Adversarial</span></div>
+    <svg id="trust-chart" role="img" aria-labelledby="trust-chart-title trust-chart-desc" viewBox="0 0 760 360" preserveAspectRatio="none">
+      <title id="trust-chart-title">Learned agent trust over time</title>
+      <desc id="trust-chart-desc">Three lines show the learned trust values of reliable, noisy, and adversarial agents over simulation rounds.</desc>
+      <g id="trust-grid"></g>
+      <g id="trust-paths"></g>
+    </svg>
+    <div id="trust-summary" class="trust-summary" aria-live="polite"></div>
+  </div>
+</div>
+```
+
+::: {.section-heading}
+<div>
+<p class="eyebrow">CURRENT WORK</p>
+
+## Research, implementation, evidence
+</div>
+<p>Every project follows the same path: derive the idea, implement it from first principles, test it, and document what changed my mind.</p>
+:::
+
+::: {.project-grid}
+::: {.project-card .project-card--featured}
+<span class="project-index">01 · REINFORCEMENT LEARNING</span>
+
+### Trust-Aware Multi-Agent RL
+
+Online trust estimation for agent ensembles, including noisy and adversarial participants.
+
+`Bandits` `Multi-agent systems` `Prompt injection`
+
+[View project →](projects/trust-aware/index.qmd)
+:::
+
+::: {.project-card}
+<span class="project-index">02 · DEEP LEARNING</span>
+
+### CNN from Scratch
+
+Forward and backward passes for convolution and pooling, implemented using NumPy without automatic differentiation.
+
+`NumPy` `Backpropagation` `Conv2D`
+
+[View source →](https://github.com/MSirous/ml_from_scratch/tree/main/cnn-from-scratch)
+:::
+
+::: {.project-card}
+<span class="project-index">LAB NOTES</span>
+
+### Learning in public
+
+Paper notes, mathematical derivations, experiments, and honest records of what failed.
+
+`Research notes` `Reproducibility` `Open source`
+
+[Enter the lab →](lab/index.qmd)
+:::
+:::
+:::

@@ -1,0 +1,16 @@
+---
+title: "Projects"
+description: "Research projects developed from theory through implementation and experiment."
+page-layout: full
+toc: false
+listing:
+  contents:
+    - trust-aware/index.qmd
+  type: grid
+  sort: "date desc"
+  fields: [image, date, title, description, categories]
+  grid-columns: 2
+  filter-ui: true
+---
+
+Projects here are not isolated demos. Each one connects a research question to mathematical reasoning, a reproducible implementation, and evidence.

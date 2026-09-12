@@ -1,0 +1,22 @@
+---
+title: "About"
+description: "About Mahsa Sirous and her current research direction."
+toc: false
+---
+
+I am a software engineer and early-career AI researcher based in Singapore. My work focuses on reinforcement learning, multi-agent systems, and trustworthy AI.
+
+I learn by rebuilding methods from first principles: deriving the mathematics, implementing the algorithm without high-level abstractions, and then testing what the derivation predicts.
+
+My current research direction is **trust-aware multi-agent LLM systems**: how an aggregation system can learn which agents to rely on when some participants are noisy, unreliable, or adversarial.
+
+## Education
+
+- **M.Sc. in Information Technology**, Eastern Mediterranean University, 2024
+- **B.Sc. in Computer Software Engineering**, Islamic Azad University, Najafabad, 2015
+
+## Links
+
+- [GitHub](https://github.com/MSirous)
+- [LinkedIn](https://www.linkedin.com/in/mahsasirous/)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=S1sWaSMAAAAJ)
