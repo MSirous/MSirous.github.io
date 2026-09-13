@@ -19,7 +19,7 @@ include-after-body:
 ::: {.hero-copy}
 <p class="eyebrow">AI RESEARCH WORKBENCH · SINGAPORE</p>
 
-# I rebuild intelligent systems to understand how—and whom—they learn to trust.
+# I rebuild intelligent systems to understand how "and" whom they learn to trust.
 
 I’m **Mahsa Sirous**, a software engineer and early-career AI researcher working at the intersection of reinforcement learning, multi-agent systems, and trustworthy AI.
 
